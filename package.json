@@ -1,0 +1,19 @@
+{
+  "name": "inventory-system",
+  "version": "1.0.0",
+  "description": "Full stack inventory management system",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.2"
+  }
+}
